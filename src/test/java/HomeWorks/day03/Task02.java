@@ -36,18 +36,18 @@ public class Task02 {
     @Test
     public  void test1(){
         //Click on Locators - Find By Playground Test Page
-        driver.findElement(By.id("findbytest"));
+        driver.findElement(By.id("findbytest")).click();
 
         //Print the URL
         String firstURL = driver.getCurrentUrl();
         System.out.println("firstURL = " + firstURL);
 
         //Navigate back
-        driver.navigate().back();
+       driver.navigate().back();
 
         //Print the URL
-        String SeconedURL = driver.getCurrentUrl();
-        System.out.println("SeconedURL = " + SeconedURL);
+        String seconedURL = driver.getCurrentUrl();
+        System.out.println("seconedURL = " + seconedURL);
 
         //Click on WebDriver Example Page
         driver.findElement(By.id("webdriverexamplepage")).click();

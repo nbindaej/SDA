@@ -31,7 +31,7 @@ public class Task01 {
     public void greenMileTest(){
         driver.findElement(SearchBox).sendKeys("Green Mile"+Keys.ENTER);
         System.out.println(driver.findElement(ResultNum).getText());
-        driver.findElement(By.id("APjFqb")).clear();
+        driver.findElement(SearchBox).clear();
 
     }
 
@@ -48,6 +48,7 @@ public class Task01 {
     public void BenjaminTest(){
         driver.findElement(SearchBox).sendKeys("The Curious Case of Benjamin Button"+Keys.ENTER);
         System.out.println(driver.findElement(ResultNum).getText());
+        driver.findElement(SearchBox).clear();
     }
 
     //Close with AfterClass.

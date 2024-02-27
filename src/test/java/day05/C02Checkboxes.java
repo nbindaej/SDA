@@ -58,7 +58,6 @@ public class C02Checkboxes {
         Assert.assertTrue(checkboxes.get(0).isSelected());
         Assert.assertTrue(checkboxes.get(0).isSelected());
 
-
     }
 
 }

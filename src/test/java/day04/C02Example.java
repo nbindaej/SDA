@@ -38,9 +38,9 @@ public class C02Example {
     }
 
     public void DeleteButtonsAndValidate(int numberOfDelete) throws InterruptedException {
-        WebElement deletebutton = driver.findElement(By.id("//button[text()='Delete']"));
+        List <WebElement> deletebutton = driver.findElements(By.id("//button[text()='Delete']"));
         for (int i = 0; i < numberOfDelete; i++) {
-            deletebutton.click();
+            deletebutton.get(i).click();
         }
 
     }

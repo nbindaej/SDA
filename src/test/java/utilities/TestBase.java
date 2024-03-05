@@ -19,7 +19,8 @@ public abstract class TestBase {
         actions = new Actions(driver);
     }
     @AfterClass
-    public static void tearDown(){
-       // driver.quit();
+    public static void tearDown() throws InterruptedException {
+        //Thread.sleep(5000);
+       //driver.quit();
     }
 }

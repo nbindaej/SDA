@@ -35,7 +35,9 @@ public class Challenge extends TestBase {
         for (int i=0; i<videos.size(); i++){
             boolean isTitle = videos.get(i).getText().contains(topic);
             if(isTitle == true){
-                videos.get(i).click();}
+                videos.get(i).click();
+                break;
+            }
         }
 
         String videoHandle = driver.getWindowHandle();
